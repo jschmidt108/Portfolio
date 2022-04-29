@@ -1,0 +1,141 @@
+/* Style everything */
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box 
+}
+
+/* Style container */
+
+.container {
+    text-align: center;
+}
+
+
+/* Style the topNav */
+
+.topNav {
+    overflow: hidden;
+    background-color: #669098;
+    position: relative;
+}
+
+
+
+/* Style the navigation menu */
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* Style the hamburger div*/
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding: 0 24px;
+}
+
+
+/* Style the hamburger lines*/
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+  
+.topNav #myLinks {
+    display: none;
+}
+  
+  /* Style navigation menu links */
+
+.topNav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* style the name */
+
+h3 {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: #669098;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+
+/* Add a grey background color on mouse-over */
+  
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+/* Style the active link (or home/logo) */
+
+.portfolio {
+      background-color: #669098;
+      color: white;
+}
+
+
+
+/* probably can delete  */
+
+/* a {
+    color: white;
+    text-decoration: none;
+} */
+
+/* .navBar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+} */
+
+
+
+/* .myLinks {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+} */
