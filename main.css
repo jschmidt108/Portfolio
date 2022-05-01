@@ -3,37 +3,44 @@
 * { 
     padding: 0;
     margin: 0;
-    box-sizing:border-box 
+    box-sizing:border-box;
 }
 
-/* Style container */
 
-.container {
-    text-align: center;
-}
+
 
 
 /* Style the topNav */
 
 .topNav {
     overflow: hidden;
-    background-color: #669098;
+    background-color: black;
     position: relative;
 }
-
 
 
 /* Style the navigation menu */
 
 .navMenu {
+    min-height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
-    gap: 60px;
 }
 
 
-/* Style the hamburger div*/
+
+/* Style the social media icons*/
+
+.fa {
+    float: right;
+    border-radius: 50%;
+    /* display: flex; */
+    /* justify-content: left; */
+}
+
+
+/* Style the hamburger div and exit div*/
 
 .hamburger {
     display: block;
@@ -42,8 +49,15 @@
     padding: 0 24px;
 }
 
+.exit {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 0 24px;
+}
 
-/* Style the hamburger lines*/
+
+/* Style the hamburger lines and close menu*/
 
 .bar {
     display: block;
@@ -53,6 +67,17 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
+}
+
+
+.X {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(110, 203, 200);
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -67,75 +92,98 @@
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
     display: block;
 }
 
 
-/* style the name */
+/* style the name on topNav */
 
 h3 {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 
-/* Style the hamburger menu */
-
-.topnav a.icon {
-    background: #669098;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-  
-
-/* Add a grey background color on mouse-over */
+/* Add a grey background color on hover to links */
   
 .topNav a:hover {
     background-color: #ddd;
+    /* opacity: 0.9; */
     color: black;
 }
 
 
 
-/* Style the active link (or home/logo) */
-
-.portfolio {
-      background-color: #669098;
-      color: white;
-}
-
-
-
-/* probably can delete  */
-
-/* a {
-    color: white;
-    text-decoration: none;
-} */
-
-/* .navBar {
+.navMenu {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
-} */
+}
 
+/* Style container */
 
-
-/* .myLinks {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #262626;
-    width: 100%;
+.container {
     text-align: center;
-    transition: 0.3s;
-} */
+    color: white;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 19px;
+    color: rgb(110, 203, 200);
+}
+
+
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+
+/* typewrite effect */
+/* referenced css tricks article to get the typewrite effect - article by Geoff Graham */
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+
+.typing h2 {
+    font-family: 'Source Code Pro', monospace;
+    width: auto;
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(110, 203, 200); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:  
+      typing 5s steps(40, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(110, 203, 200); }
+  }

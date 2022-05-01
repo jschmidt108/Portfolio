@@ -3,37 +3,44 @@
 * { 
     padding: 0;
     margin: 0;
-    box-sizing:border-box 
+    box-sizing:border-box;
 }
 
-/* Style container */
 
-.container {
-    text-align: center;
-}
+
 
 
 /* Style the topNav */
 
 .topNav {
     overflow: hidden;
-    background-color: #669098;
+    background-color: black;
     position: relative;
 }
-
 
 
 /* Style the navigation menu */
 
 .navMenu {
+    min-height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
-    gap: 60px;
 }
 
 
-/* Style the hamburger div*/
+
+/* Style the social media icons*/
+
+.fa {
+    float: right;
+    border-radius: 50%;
+    /* display: flex; */
+    /* justify-content: left; */
+}
+
+
+/* Style the hamburger div and exit div*/
 
 .hamburger {
     display: block;
@@ -42,10 +49,27 @@
     padding: 0 24px;
 }
 
+.exit {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 0 24px;
+}
 
-/* Style the hamburger lines*/
+
+/* Style the hamburger lines and exit line*/
 
 .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.X {
     display: block;
     width: 25px;
     height: 3px;
@@ -67,75 +91,60 @@
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
     display: block;
 }
 
 
-/* style the name */
+/* style the name on topNav */
 
 h3 {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 
-/* Style the hamburger menu */
-
-.topnav a.icon {
-    background: #669098;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-  
-
-/* Add a grey background color on mouse-over */
+/* Add a grey background color on hover to links */
   
 .topNav a:hover {
     background-color: #ddd;
+    /* opacity: 0.9; */
     color: black;
 }
 
 
 
-/* Style the active link (or home/logo) */
-
-.portfolio {
-      background-color: #669098;
-      color: white;
-}
-
-
-
-/* probably can delete  */
-
-/* a {
-    color: white;
-    text-decoration: none;
-} */
-
-/* .navBar {
+.navMenu {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
-} */
+}
+
+/* Style container */
+
+.container {
+    color: white;
+    height: 100px;
+    position: absolute;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(110, 203, 200);
+    padding: 10px 10px 10px 50px;
+}
 
 
 
-/* .myLinks {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #262626;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-} */
+body {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
