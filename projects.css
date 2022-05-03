@@ -7,6 +7,9 @@
 }
 
 
+
+
+
 /* Style the topNav */
 
 .topNav {
@@ -15,6 +18,7 @@
 }
 
 
+/* Style the navigation menu */
 /* Style the navigation menu */
 
 .navMenu {
@@ -59,7 +63,10 @@
 }
 
 
-/* Style the hamburger lines and close menu*/
+
+
+
+/* Style the hamburger lines and exit line*/
 
 .bar {
     display: block;
@@ -70,7 +77,6 @@
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-
 
 .X {
     display: block;
@@ -101,7 +107,6 @@
 
 /* style the name on topNav */
 
-
 .navMenu h3 {
     color: white;
     padding: 14px 16px;
@@ -114,33 +119,29 @@
   
 .topNav a:hover {
     background-color: #ddd;
+    /* opacity: 0.9; */
     color: black;
 }
+
 
 
 /* Style container */
 
 .container {
-    text-align: center;
     color: white;
     height: 100px;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
-.name h1 {
+h1 {
     font-size: 3em;
-    padding: 5px;
+    padding: 10px;
 }
 
-
-.typing h2 {
-    font-size: 19px;
+h2 {
+    font-size: 30px;
     color: rgb(110, 203, 200);
+    padding: 10px 10px 10px 50px;
 }
 
 /* Style the footer */
@@ -170,10 +171,6 @@ body {
 }
 
 
-/* typewrite effect */
-/* referenced css tricks article to get the typewrite effect - article by Geoff Graham */
-/* https://css-tricks.com/snippets/css/typewriter-effect/ */
-
 
 .typing h2 {
     font-family: 'Source Code Pro', monospace;
@@ -185,7 +182,7 @@ body {
     margin: 0 auto;/* Gives that scrolling effect as the typing happens*/
     letter-spacing: .15em; /* Adjust as needed */
     animation:  
-      typing 5s steps(40, end),
+      typing 3s steps(20, end),
       blink-caret 1s step-end infinite;
   }
   

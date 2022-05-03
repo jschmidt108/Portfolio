@@ -1,4 +1,3 @@
-
 const openMenu = () => {
     $('#myLinks').css('display', 'block')
 
