@@ -148,11 +148,13 @@
     max-width: 700px;
 }
 
+
 .footer {
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    float: right;
     text-align: center;
     overflow: hidden;
     padding: 10px;
@@ -177,8 +179,14 @@
     font-size: 30px;
     color: rgb(189, 189, 189);
     padding: 10px 10px 10px 50px;
+    cursor: pointer;
+    border: solid;
 }
 
+.container h2:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 .name h2 {
     font-size: 2.5em;
@@ -196,6 +204,13 @@ p {
     padding: 10px 10px 10px 50px;
 }
 
+.aboutP {
+    display: none;
+}
+
+.inter {
+    display: none;
+}
 
 /* Style the body */
 
