@@ -66,8 +66,6 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     background-color: white;
 }
 
@@ -77,8 +75,6 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     background-color: rgb(110, 203, 200);
 }
 
@@ -201,3 +197,29 @@ body {
     from, to { border-color: transparent }
     50% { border-color: rgb(110, 203, 200); }
   }
+
+
+  /* responsive  */
+  /* used css tricks for phone sizing */
+  /* https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+
+  @media only screen 
+      and (min-device-width: 375px)
+      and (max-device-width: 812px)
+      and (-webkit-min-device-pixel-ratio: 3) {
+        .hamburger {
+            padding: 7px 8px;
+          }
+          .exit {
+              padding: 7px 8px;
+          }
+          .name h1 {
+              font-size: 1.5em;
+          }
+          .name h2 {
+              font-size: 9px;
+          }
+      }
+
+
